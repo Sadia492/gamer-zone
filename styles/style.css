@@ -573,6 +573,99 @@ nav {
 }
 
 /* ------category styles ends here---- */
+/* ------footer styles starts here---- */
+footer {
+  background: rgb(11, 2, 35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+}
+footer .logo h1 {
+  color: white;
+}
+.item {
+  list-style: none;
+  margin-right: 60px;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 56px;
+  margin-bottom: 56px;
+  gap: 20px;
+}
+.social i {
+  font-size: 30px;
+  color: white;
+  margin-right: 40px;
+}
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.policy-item {
+  list-style: none;
+  margin-right: 60px;
+}
+.policy-item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.policy {
+  margin-top: 64px;
+  margin-bottom: 18px;
+}
+.youtube2 {
+  background-color: #f61c0d;
+  clip-path: polygon(
+    25% 15%,
+    80% 16%,
+    100% 33%,
+    100% 65%,
+    83% 85%,
+    20% 85%,
+    0 65%,
+    0 33%
+  );
+}
+.facebook {
+  background-color: #1877f2;
+  border-radius: 50%;
+}
+.social {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px;
+}
+.policy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+/* ------footer styles ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   nav,
@@ -675,5 +768,22 @@ nav {
       "category1 category2 category3"
       "category4 category5 category6"
       "category7 category8 category9";
+  }
+  footer {
+    width: 100%;
+    padding: 50px;
+  }
+  .footer-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .social {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .policy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .policy-item,
+  .item {
+    margin-right: 0px;
   }
 }
