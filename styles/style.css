@@ -381,11 +381,50 @@ nav {
   left: -20%;
 }
 /* ------instant styles ends here---- */
+/* ------online styles starts here---- */
+.online {
+  margin-top: 220px;
+  align-items: center;
+  gap: 150px;
+}
+.online-image {
+  position: relative;
+}
+.online-image img {
+  width: 100%;
+}
+.online-image .girl {
+  width: 50%;
+  position: absolute;
+  top: 60%;
+  right: -20%;
+}
+.online-content h1 {
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #0b0223;
+}
+.online-content span {
+  background: linear-gradient(90deg, #f948b2ff, #8758f1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.online-content .section-description {
+  text-align: left;
+}
+/* ------online styles ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   nav,
   .menu,
-  .instant {
+  .instant,
+  .online {
     flex-direction: column;
   }
   .logo {
@@ -454,5 +493,15 @@ nav {
   }
   .instant-image {
     margin-top: 70px;
+  }
+  .online-content {
+    width: 90%;
+  }
+  .online-image {
+    width: 80%;
+  }
+  .online-content h1,
+  .online-content .section-description {
+    text-align: center;
   }
 }
