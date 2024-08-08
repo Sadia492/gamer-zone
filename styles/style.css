@@ -50,6 +50,15 @@ body {
   border: none;
   margin-left: 24px;
 }
+.section-description {
+  color: rgb(83, 76, 100);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: right;
+}
 /* ------shared styles ends here---- */
 /* ------header styles starts here---- */
 /* nav styles */
@@ -214,6 +223,57 @@ nav {
 }
 
 /* ------header styles ends here---- */
+/* ------gamer styles starts here---- */
+.gamer-content h1 {
+  background: linear-gradient(180deg, rgb(249, 72, 178), rgb(135, 88, 241));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.gamer-content h6 {
+  color: rgb(83, 76, 100);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.gamer {
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gamer-content h4 {
+  color: rgb(83, 76, 100);
+  font-family: Work Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.gamer-image {
+  width: 60%;
+}
+.gamer-image img {
+  width: 100%;
+}
+.gamer-content {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+/* ------gamer styles ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   nav,
@@ -233,18 +293,42 @@ nav {
     flex-direction: column-reverse;
   }
   .banner-content {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: 0px;
     background-position: right;
   }
   .banner-content-container {
     width: 90%;
-    padding: 40px;
+    padding: 40px 0px;
+  }
+  .btn-secondary {
+    margin-left: 0px;
   }
   .banner-image {
     width: 90%;
     margin-left: auto;
     margin-bottom: 24px;
+  }
+
+  .gamer {
+    flex-direction: column;
+  }
+  .gamer-content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .gamer-image {
+    width: 100%;
+  }
+  .gamer-image img {
+    width: 100%;
+  }
+  .gamer-content h1,
+  .gamer-content h4,
+  .gamer-content h6,
+  .gamer-content p {
+    text-align: center;
   }
 }
