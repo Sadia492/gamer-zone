@@ -274,6 +274,41 @@ nav {
 }
 
 /* ------gamer styles ends here---- */
+/* ------video styles starts here---- */
+.video {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.video h1 {
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.video .section-description {
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: 16px;
+}
+.video span {
+  background: linear-gradient(180deg, rgb(249, 72, 178), rgb(135, 88, 241));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.card img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+/* ------video styles ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   nav,
@@ -330,5 +365,8 @@ nav {
   .gamer-content h6,
   .gamer-content p {
     text-align: center;
+  }
+  .video-container {
+    grid-template-columns: 1fr;
   }
 }
