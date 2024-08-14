@@ -181,6 +181,7 @@ nav {
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-bottom: 24px;
+  filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.265));
 }
 .banner-content-container p {
   color: rgb(83, 76, 100);
@@ -191,6 +192,8 @@ nav {
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 17px;
+}
+.banner-container h1 {
 }
 .play {
   background: linear-gradient(180deg, rgb(249, 72, 178), rgb(135, 88, 241));
@@ -304,16 +307,26 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+.card img:hover {
+  filter: brightness(0.5);
+}
+.card img:hover + .icon {
+  display: block;
+}
+.icon:hover {
+  display: block;
+}
+.icon:hover img {
+  filter: brightness(0.5);
+}
 .card img {
   width: 100%;
   margin-bottom: 24px;
 }
-.card:hover {
-  filter: brightness(0.5);
-}
 
 .card {
   position: relative;
+  pointer-events: auto;
 }
 .icon {
   text-align: center;
@@ -323,6 +336,7 @@ nav {
   transform: translate(-50%, -50%);
   opacity: 1;
   z-index: 1;
+  pointer-events: none;
 }
 .icon i {
   color: white;
@@ -541,7 +555,7 @@ nav {
   width: 30%;
 }
 .category:hover {
-  border: 2px solid #ff42a5;
+  outline: 2px solid #ff42a5;
   border-radius: 50px;
 }
 .category1 {
